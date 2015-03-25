@@ -5,7 +5,7 @@
 <head>
 
 
-<title>Home</title>
+<title>Board</title>
 
 <link href="/css/carousel.css" rel="stylesheet"
 	th:href="@{/css/carousel.css}" />
@@ -19,7 +19,9 @@
 			<br />
 			<br />
 			<br />
-			<h1>Welkom!</h1>
+			<h1 th:text="${boardName}">School Board Page</h1>
+			<h3>Content:</h3>
+			<span th:text="${boardContent}">Content Goes Here</span>
 		</div>
 
 	</div>
